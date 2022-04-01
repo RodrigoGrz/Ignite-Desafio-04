@@ -107,6 +107,29 @@
                     }
                 }
             }
+        },
+        "/users/{user_id}/admin": {
+            "patch": {
+                "tags": ["User"],
+                "summary": "Turn user admin",
+                "description": "Turn user admin",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "User id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
         }
     }
 }
